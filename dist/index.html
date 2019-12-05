@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <title>Bootcamp Proficiency Exam</title>
+</head>
+
+<body>
+
+    <script id="food-template" type="text/x-handlebars-template">
+            {{#each data}}
+            <div class="food">
+                 <a class="food-name" href="{{href}}">{{title}}</a> <br>
+                 <img class="food-pic" src="{{thumbnail}}" > 
+                 <p class="food-ingredients">ingredients :</p>
+                 <ul class="ingredients">   
+                 {{#each ingredients}}
+                <li class="ingredient"> {{this}} </li>
+                {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+         </script>
+
+    <div id="input-container">
+        <input type="text" id="ingredientInput" placeholder="What is the ingredient?">
+        <button onclick=fetchFoodData()>Search!</button>
+    </div>
+
+    <div class="food-container">
+
+    </div>
+
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

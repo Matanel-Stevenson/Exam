@@ -1,0 +1,70 @@
+body{
+    display: grid;
+    font-family: Poppins;
+    background-color: gold;
+    grid-template-rows: 1fr 9fr;
+    height: 100vh;
+}
+a{
+    color: goldenrod;
+    display: block;
+    text-align: center;
+}
+li{
+    display: none;
+    font-size: 12px;
+}
+button{
+    border-radius: 25px;
+    width: 15vw;
+}
+button:hover{
+    background-color: gray;
+}
+.food-ingredients:hover{
+    background-color: goldenrod;
+}
+.food-ingredients{
+    color: green;
+}
+.food-name:hover{
+    background-color: green;
+}
+#input-container{
+    display: inline-block;
+}
+#ingredientInput{
+    border-radius: 25px;
+    width: 70vw;
+}
+
+.food-container{
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+.food{
+    background-color: maroon ;
+    position: relative;
+    font-size: 15px;
+    padding: 5px;
+    padding: 20px;
+}
+.food-pic{
+    display: block;
+    border-style: dashed;
+    border-color: goldenrod;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+.food-info{
+    text-align: center;
+}
+.ingredients{
+    color: goldenrod;
+    display: block;
+}
